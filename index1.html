@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <h1> Form 사용하기</h1>
+  <form method="POST" action="">
+    <fieldset>
+      <legend>로그인</legend>
+      <label for="userid">아이디</label>
+      <input type="text" id="userid" size="30" value="test" placeholder="아이디를 입력하세요" maxlength="10"/>
+      <br />
+      <label for="passwd">패스워드</label>
+      <input type="text" id="passwd" size="30" required />
+    </fieldset>
+ 
+    <label for="memo">메모</label>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+      <br />
+      <label for="">검색</label>
+      <input type="search" name="" id=""  >
+      <br />
+      <label for="">홈페이지</label>
+      <input type="url" name=""    id="" value="https://www.naver.com/" >
+      <br />
+      <label for="">이메일</label>
+      <input type="email" name="" id=""  value="power7009@naver.com" >
+      <br />
+      <label for="">전화번호</label>
+      <input type="tel" name="" id=""  value="power7009@naver.com" >
+      <p>주문할 상품을 선택해 주세요</p>
+      <label for=""><input type="checkbox" value="1"  />선물용 3kg</label>
+      <label for=""><input type="checkbox" value="1"  />선물용 5kg</label>
+      <label for=""><input type="checkbox" value="1"  />선물용 10kg</label>
+
+      <p>포장 선택</p>
+      <label for=""><input type="radio" name="gift" id="" value="yes" / >선물 포장</label>
+      <label for=""><input type="radio" name="gift" id="" value="no" / >선물 포장안함</label>
+
+      <br>
+      <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <label for="cowball">cowball</label> 
+
+      <br>
+      <input type="number" name="number" id=""  />
+      <br>
+      <input type="time" name="" id=""  />
+      <br>
+
+  <input type="submit" value="주문하기" />
+  <input type="reset" value="취소하기"  />
+  <br>
+  <input type="button" value="버튼테스트1" />
+  <button>버튼 테스트2</button>
+  <input type="hidden" name="" value="Hidden 요소 테스트 ">
+  
+  </form>
+</body>
+</html>
